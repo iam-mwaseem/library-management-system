@@ -1,5 +1,5 @@
 const { where, Op, and } = require("sequelize");
-const db = require("./../config/db");
+const db = require("../config/db");
 
 const signup = async (req, res) => {
   let { name, email, password, passwordConfirm } = req.body;
