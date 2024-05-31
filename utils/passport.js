@@ -37,6 +37,7 @@ const GoogleAuthenticateUser = async (
 module.exports = (passport) => {
   passport.use(
     //1.Google strategy
+
     new GoogleStrategy(
       {
         clientID: process.env.CLIENT_ID,
