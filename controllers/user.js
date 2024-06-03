@@ -1,4 +1,4 @@
-const db = require("../models");
+const db = require("./../models/index");
 
 exports.getUser = async (req, res) => {
   const { id } = req.body;

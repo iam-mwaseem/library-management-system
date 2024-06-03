@@ -1,4 +1,4 @@
-const db = require(".");
+const db = require("./index");
 module.exports = (sequelize, DataTypes, Model) => {
   class LibraryCard extends Model {}
 
@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes, Model) => {
       id: {
         type: DataTypes.INTEGER,
         unique: true,
-        //   autoIncrement: true,
+        autoIncrement: true,
         primaryKey: true,
       },
 

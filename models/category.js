@@ -1,4 +1,4 @@
-const db = require(".");
+const db = require("./index");
 
 module.exports = (sequelize, DataTypes, Model) => {
   class Category extends Model {}
