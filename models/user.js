@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const db = require("./../config/db");
+const db = require(".");
 
 module.exports = (sequelize, DataTypes, Model) => {
   class User extends Model {}

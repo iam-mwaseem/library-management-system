@@ -1,7 +1,7 @@
 const localStrategy = require("passport-local").Strategy;
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
 const bcrypt = require("bcrypt");
-const db = require("../config/db");
+const db = require("../models");
 
 const LocalAuthenticateUser = async (name, password, done) => {
   try {
